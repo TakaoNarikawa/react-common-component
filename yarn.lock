@@ -8571,7 +8571,7 @@ react-app-polyfill@^1.0.6:
 
 "react-common-component@https://github.com/TakaoNarikawa/react-common-component.git":
   version "1.0.0"
-  resolved "https://github.com/TakaoNarikawa/react-common-component.git#16cfd20eaba942517ab733cbb739ed28eabd1430"
+  resolved "https://github.com/TakaoNarikawa/react-common-component.git#3f1abb8983cb42e0c323be175c442c69036143ad"
   dependencies:
     "@types/react" "^16.9.34"
     "@types/styled-components" "^5.1.0"
