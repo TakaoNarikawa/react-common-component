@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TINY = "4px";
+exports.SMALL = "8px";
+exports.NORMAL = "16px";
+exports.LARGE = "24px";
+exports.EXTRA_LARGE = "32px";
+exports.HUGE = "48px";
+exports.DISPLAY_DIVISION_LARGE = "1072px";
+exports.DISPLAY_DIVISION_NORMAL = "736px";
+exports.DISPLAY_DIVISION_SMALL = "520px";
+exports.DISPLAY_DIVISION_TINY = "370px";
