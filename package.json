@@ -1,0 +1,28 @@
+{
+  "name": "react-common-component",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/TakaoNarikawa/react-common-component.git",
+  "author": "TakaoNarikawa",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --jsx react",
+    "test": "jest --coverage"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.34",
+    "@types/styled-components": "^5.1.0",
+    "react": "^16.13.1",
+    "styled-components": "^5.1.0"
+  }
+}
