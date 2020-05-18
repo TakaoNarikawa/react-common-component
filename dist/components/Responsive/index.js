@@ -20,7 +20,7 @@ var Responsive = function (_a) {
         return react_1.default.createElement(Min, { min: min }, children);
     if (max)
         return react_1.default.createElement(Max, { max: max }, children);
-    return react_1.default.createElement("br", null);
+    return react_1.default.createElement(react_1.default.Fragment, null, children);
 };
 exports.default = Responsive;
 var templateObject_1, templateObject_2, templateObject_3;

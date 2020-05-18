@@ -37,7 +37,7 @@ const Responsive: React.FC<Props> = ({ min, max, children }) => {
     );
   if (min) return <Min min={min}>{children}</Min>;
   if (max) return <Max max={max}>{children}</Max>;
-  return <br />;
+  return <>{children}</>;
 };
 
 export default Responsive;
