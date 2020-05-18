@@ -5,7 +5,6 @@ import styled from "styled-components";
 type Props = {
   topMargin?: string;
   bottomMargin?: string;
-  additionalStyle?: string;
 };
 
 const Wrapper = styled.div<Props>`
@@ -25,17 +24,10 @@ const Wrapper = styled.div<Props>`
   @media screen and (max-width: ${DISPLAY_DIVISION_NORMAL}) {
     max-width: 330px;
   }
-
-  ${(props) => props.additionalStyle}
 `;
 
-const ContentWrapper: React.FC<Props> = ({
-  children,
-  topMargin,
-  bottomMargin,
-  additionalStyle,
-}) => (
-  <Wrapper topMargin={topMargin} bottomMargin={bottomMargin} additionalStyle={additionalStyle}>
+const ContentWrapper: React.FC<Props> = ({ children, topMargin, bottomMargin }) => (
+  <Wrapper topMargin={topMargin} bottomMargin={bottomMargin}>
     {children}
   </Wrapper>
 );
