@@ -28,7 +28,7 @@ const Dark = styled.div`
 const Border = styled.div`
   border: dashed 2px orange;
 `;
-const Highlight = styled(NoBr)`
+const Highlight = styled.span`
   color: orange;
 `;
 
@@ -58,7 +58,9 @@ function App() {
         <Dark>
           <Paragraph>
             文字同士のスペースが存在しない日本語でも、
-            <Highlight>途中で改行したくない文字</Highlight>
+            <NoBr>
+              <Highlight>途中で改行したくない文字</Highlight>
+            </NoBr>
             を指定し、自動的に改行。
           </Paragraph>
         </Dark>
@@ -77,15 +79,15 @@ function App() {
           <Paragraph>
             <NoBrs
               words={[
-                "単語の",
+                <Highlight>単語の</Highlight>,
                 "途中で",
-                "改行",
+                <Highlight>改行</Highlight>,
                 "させない、",
-                "意味の",
+                <Highlight>意味の</Highlight>,
                 "区切りを",
-                "指定",
+                <Highlight>指定</Highlight>,
                 "することで",
-                "自動的に",
+                <Highlight>自動的に</Highlight>,
                 "改行。",
               ]}
             />
